@@ -62,8 +62,8 @@
             <p> Watch a clip from our favorite show: </p>
 
             <video controls width="270">
-                <source src="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/Boot 'n Rally.mp4" type="video/mp4">
-                <a href="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/Boot 'n Rally.mp4"> </a>
+                <source src="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/BootnRally.mp4" type="video/mp4">
+                <a href="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/BootnRally.mp4"> </a>
 
             </video>
 
@@ -72,13 +72,10 @@
         <hr>
 
         <nav>
-            <ul>
-                <p><b>Useful Links:</b></p>
+            <b>Useful Links:</b> <br>
+            <a href="https://donttestturing.github.io/Lab2_Starter/images/Brendan'sDiagram.png"> Brendan's Diagram </a> <br>
+            <a href="https://donttestturing.github.io/Lab2_Starter/text content/EmailList.md"> Emails </a>
 
-                <a href="https://donttestturing.github.io/Lab2_Starter/images/Brendan's Diagram.png"> Brendan's Diagram </li> </a> <br>
-                <a href="https://donttestturing.github.io/Lab2_Starter/text content/EmailList.md"> Emails </li> </a>
-
-            </ul>
         </nav>
 
         <hr>
@@ -86,24 +83,24 @@
         <h3> New or Unfinished Business to be discussed next time: </h3>
         <ul>
             <li> Finish deciding on rules and expectations for the team </li>
-            <details>
-                <summary> <i>Click here for rules agreed upon so far:</i> </summary>
-                <ol>
-                    <li> Meet twice a week </li>
-                    <li> Check slack once a day </li>
-                    <li> Be Early </li>
-                    <li> Measure twice, cut once </li>
-                </ol>
-            </details>
             <li> Codebases Decision </li>
             <li> Meeting time and place change </li>
             <li> Git Branch and Merge conflicts </li>
         </ul>
+        <details>
+            <summary> <i>Click here for rules agreed upon so far:</i> </summary>
+            <ol>
+                <li> Meet twice a week </li>
+                <li> Check slack once a day </li>
+                <li> Be Early </li>
+                <li> Measure twice, cut once </li>
+            </ol>
+        </details>
     </main>
 
     <footer>
         <h3> Survey for Teammates: </h3>
-        <form action="" method="get" class="TeamMateForm">
+        <form action="/survey_page.php" method="get" class="TeamMateForm">
             
                 <div class="TeamMateForm">
                     <label for="memberName"> Enter your name: </label>
@@ -113,16 +110,16 @@
                 <fieldset>
                     <legend> Select your favorite fruit </legend>
                     <div class="favFruitApple">
-                        <label for="favFruit"> Apple </label>
+                        <label for="favFruitApple"> Apple </label>
                         <input type="radio" name="favFruitApple" id="favFruitApple" required>
                     </div>
-                    <div class="favFruitApple">
-                        <label for="favFruit"> Banana </label>
-                        <input type="radio" name="favFruitApple" id="favFruitApple" required>
+                    <div class="favFruitBanana">
+                        <label for="favFruitBanana"> Banana </label>
+                        <input type="radio" name="favFruitBanana" id="favFruitBanana" required>
                     </div>
-                    <div class="favFruitApple">
-                        <label for="favFruit"> Orange </label>
-                        <input type="radio" name="favFruitApple" id="favFruitApple" required>
+                    <div class="favFruitOrange">
+                        <label for="favFruitOrange"> Orange </label>
+                        <input type="radio" name="favFruitOrange" id="favFruitOrange" required>
                     </div>
                 </fieldset>
                 <div class="TeamMateForm">
@@ -132,17 +129,17 @@
                 <!--Checkbox-->
                 <fieldset>
                     <legend> Select the days after class you can meet </legend>
-                    <div class="daysToMeet">
-                        <label for="daysCanMeet"> Monday </label>
-                        <input type="checkbox" name="daysToMeet" id="daysToMeet" checked>
+                    <div class="daysToMeetMonday">
+                        <label for="daysToMeetMonday"> Monday </label>
+                        <input type="checkbox" name="daysToMeetMonday" id="daysToMeetMonday" checked>
                     </div>
-                    <div class="daysToMeet">
-                        <label for="daysCanMeet"> Wednesday </label>
-                        <input type="checkbox" name="daysToMeet" id="daysToMeet" checked>
+                    <div class="daysToMeetWednesday">
+                        <label for="daysToMeetWednesday"> Wednesday </label>
+                        <input type="checkbox" name="daysToMeetWednesday" id="daysToMeetWednesday" checked>
                     </div>
-                    <div class="daysToMeet">
-                        <label for="daysCanMeet"> Friday </label>
-                        <input type="checkbox" name="daysToMeet" id="daysToMeet" checked>
+                    <div class="daysToMeetFriday">
+                        <label for="daysToMeetFriday"> Friday </label>
+                        <input type="checkbox" name="daysToMeetFriday" id="daysToMeetFriday" checked>
                     </div>
                 </fieldset>
         
