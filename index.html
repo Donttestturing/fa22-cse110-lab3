@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Team 13's First Meeting and Brainstorm </title>
+    <link rel="icon" type="image/x-icon" href="/images/calvin.png">
+  </head>
+  <body>
+    <header>
+        <h1> Team 13's Meeting Minutes </h1>
+        <img class="fit-picture" src="/images/Antlertree.jpg" alt="The King of the Forest displays his crown" height="270">
+        <h3> Date: 10/4/2022 </h3>
+        <h3> Meeting Topic: Group setup and familiarization </h3>
+    </header>
+    <main>
+        <section>
+            <h2> Agenda: </h2>
+
+            <ol>
+                <li> Do icebreaker game </li>
+                <li> Make up rules and expectations for teammates  </li>
+                <li> Sign agreement to listen to and follow leaders </li>
+            </ol>
+            
+            <p>
+                <!-- Using <b> tag to set off text for reader -->
+                 <span style="color:mediumaquamarine">Email or Slack DM</span> the team leads to add anything to <b> next week's </b> agenda! <br> <br>
+                 <!-- Using <strong> tag for importance for warning about discussing new business -->
+                 <strong> We will not be discussing any new business that is not on the agenda at the time of our meeting. </strong>
+            </p>
+        
+        </section>
+
+        <hr>
+        <section>
+            <h2> Attendance List </h2>
+            <ul>
+                <li> Brendan Devlin </li>
+                <li> Steve Usagami </li>
+                <li> Krystal Ball </li>
+                <li> Alex Alvarez </li>
+            </ul>
+        </section>
+
+        <hr>
+        <section>
+            <h2> Miscellaneous comments, concerns, and questions </h2>
+            <p> <!-- Using <em> tag for stress emphasis -->
+                Alex has expressed <em>concern</em> that we are trying to meet in person too much. He thinks we should hybridize our meeting modality. <br>
+                We have agreed that our collective favorite album of all time is The Beatles' <i>Rubber Soul</i>. <br>
+
+            </p>
+            <p> <b> We voted for our favorite song and show! </b></p>
+            <figure>
+                <figcaption>Hear a clip from our favorite song: </figcaption>
+                <audio 
+                    controls src="/AudioVisualContent/ForOnceInMyLifeHook.mp3"> 
+                    <a href="/AudioVisualContent/ForOnceInMyLifeHook.mp3"> </a>
+
+                </audio>
+            </figure>
+            <p> Watch a clip from our favorite show: </p>
+
+            <video controls width="270">
+                <source src="/AudioVisualContent/Boot 'n Rally.mp4" type="video/mp4">
+                <a href="/AudioVisualContent/Boot 'n Rally.mp4"> </a>
+
+            </video>
+
+        </section>
+
+        <hr>
+
+        <nav>
+            <ul>
+                <p><b>Useful Links:</b></p>
+
+                <a href="/images/Brendan's Diagram.png"> Brendan's Diagram </li> </a> <br>
+                <a href="/text content/EmailList.md"> Emails </li> </a>
+
+            </ul>
+        </nav>
+
+        <hr>
+
+        <h3> New or Unfinished Business to be discussed next time: </h3>
+        <ul>
+            <li> Finish deciding on rules and expectations for the team </li>
+            <details>
+                <summary> <i>Click here for rules agreed upon so far:</i> </summary>
+                <ol>
+                    <li> Meet twice a week </li>
+                    <li> Check slack once a day </li>
+                    <li> Be Early </li>
+                    <li> Measure twice, cut once </li>
+                </ol>
+            </details>
+            <li> Codebases Decision </li>
+            <li> Meeting time and place change </li>
+            <li> Git Branch and Merge conflicts </li>
+        </ul>
+    </main>
+
+    <footer>
+        <h3> Survey for Teammates: </h3>
+        <form action="" method="get" class="TeamMateForm">
+            
+                <div class="TeamMateForm">
+                    <label for="memberName"> Enter your name: </label>
+                    <input type="text" name="memberName" id="memberName" required>
+                </div>
+                <!--Radio portion-->
+                <fieldset>
+                    <legend> Select your favorite fruit </legend>
+                    <div class="favFruitApple">
+                        <label for="favFruit"> Apple </label>
+                        <input type="radio" name="favFruitApple" id="favFruitApple" required>
+                    </div>
+                    <div class="favFruitApple">
+                        <label for="favFruit"> Banana </label>
+                        <input type="radio" name="favFruitApple" id="favFruitApple" required>
+                    </div>
+                    <div class="favFruitApple">
+                        <label for="favFruit"> Orange </label>
+                        <input type="radio" name="favFruitApple" id="favFruitApple" required>
+                    </div>
+                </fieldset>
+                <div class="TeamMateForm">
+                    <label for="memberDate"> Enter the date you joined the group: </label>
+                    <input type="date" name="memberDate" id="memberDate" required>
+                </div>
+                <!--Checkbox-->
+                <fieldset>
+                    <legend> Select the days after class you can meet </legend>
+                    <div class="daysToMeet">
+                        <label for="daysCanMeet"> Monday </label>
+                        <input type="checkbox" name="daysToMeet" id="daysToMeet" checked>
+                    </div>
+                    <div class="daysToMeet">
+                        <label for="daysCanMeet"> Wednesday </label>
+                        <input type="checkbox" name="daysToMeet" id="daysToMeet" checked>
+                    </div>
+                    <div class="daysToMeet">
+                        <label for="daysCanMeet"> Friday </label>
+                        <input type="checkbox" name="daysToMeet" id="daysToMeet" checked>
+                    </div>
+                </fieldset>
+        
+
+
+            <label for="gameSelect"> Choose your favorite game: </label>
+            <select name="games" id="gameSelect">
+                <option value="">*Please choose your game*</option>
+                <option value="counterstrike"> Counterstrike </option>
+                <option value="warcraft3"> Warcraft 3 </option>
+                <option value="thesims"> The Sims </option>
+                <option value="everquest"> Everquest </option>
+            </select>
+
+            <br>
+            <label for="booksDataList"> Choose your favorite book: </label>
+            <input list="bookChoices" id="booksDataList" name="booksDataList">
+
+            <datalist id="bookChoices">
+                <option value="The Count of Monte Cristo">
+                <option value="Ender's Game">
+                <option value="Dune">
+                <option value="Textbooks">
+            </datalist>
+
+            <br>
+            <button class="TeamMateForm" type="button"> 
+                Submit Survey
+            </button>
+            <br> <br>
+            <label for="questions">Ask any questions below: </label> <br>
+            <textarea id="questions" name="questions" rows="4" cols="28">
+
+            </textarea>
+            <br> 
+            <button class="TeamMateForm" type="button">   
+                Submit questions
+            </button>
+        </form>
+ 
+    </footer>
+
+  </body>
+</html>
