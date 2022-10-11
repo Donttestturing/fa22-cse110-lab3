@@ -1,0 +1,29 @@
+/* Aligning all objects to center */
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+.center{
+    text-align: center;
+    list-style-position: inside;
+}
+.left{
+    text-align: left;
+    list-style-position: inside;
+}
+video {
+    display: block;
+    margin: auto;
+}
+img {
+    display: block;
+    margin: auto;
+}
