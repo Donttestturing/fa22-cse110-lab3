@@ -1,107 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rosario"> 
     <link rel="stylesheet" href="meetingMinutesStyle.css">
     <meta charset="UTF-8">
     <title> Team 13's First Meeting and Brainstorm </title>
-    <link rel="icon" type="image/x-icon" href="https://donttestturing.github.io/Lab2_Starter/images/calvin.png">
+    <link rel="icon" type="image/x-icon" href="https://donttestturing.github.io/Lab2_Starter/images/calvin.png"> <!-- Calvin by Bill Watterson-->
     <style>
         body {
-            background-color: rgb(126, 151, 151);
+            background-color: hsla(70, 51%, 51%, .4);
         }
     </style>
   </head>
   <body>
     <header>
-        <h1 style="color: purple; text-align:center"> Team 13's Meeting Minutes </h1>
-        <img class="fit-picture" src="https://donttestturing.github.io/Lab2_Starter/images/Antlertree.jpg" alt="The King of the Forest displays his crown" height="330">
-        <h3> Date: 10/4/2022 </h3>
-        <h3> Meeting Topic: Group setup and familiarization </h3>
+        <h1 style="color: purple"> Team 13's Meeting Minutes </h1>
+        <img class="fit-picture" src="https://donttestturing.github.io/Lab2_Starter/images/Antlertree.jpg" alt="The King of the Forest displays his crown" height="120vh" width="110vw">
+        <hr>
+        <boxShortAuto>
+            <h3> Date: 10/4/2022 </h3>
+            <h3> Meeting Topic: Group setup and familiarization </h3>
+        </boxShortAuto>
     </header>
     <main>
         <section>
-            <h2> Agenda: </h2>
-
-            <ol class="center">
-                <li> Do icebreaker game </li>
-                <li> Make up rules and expectations for teammates  </li>
-                <li> Sign agreement to listen to and follow leaders </li>
-            </ol>
-            
-            <p>
-                <!-- Using <b> tag to set off text for reader -->
-                 <span style="color:mediumaquamarine">Email or Slack DM</span> the team leads to add anything to <b> next week's </b> agenda! <br> <br>
-                 <!-- Using <strong> tag for importance for warning about discussing new business -->
-                 <strong> We will not be discussing any new business that is not on the agenda at the time of our meeting. </strong>
-            </p>
+            <boxLong class="boxLong"> <!-- remove class part?-->
+                <h2> Agenda: </h2>
+                <ol class="ems">
+                    <li> Do icebreaker game </li>
+                    <li> Make up rules and expectations for teammates  </li>
+                    <li> Sign agreement to listen to and follow leaders </li>
+                </ol>
+                <p>
+                    <!-- Using <b> tag to set off text for reader -->
+                     <span style="color:mediumaquamarine">Email or Slack DM</span> the team leads to add anything to <b> next week's </b> agenda! <br> 
+                     <!-- Using <strong> tag for importance for warning about discussing new business -->
+                     <strong> We will not be discussing any new business that is not on the agenda at the time of our meeting. </strong>
+                </p>
+            </boxLong>
         
         </section>
 
-        <hr>
+
         <section>
-            <h2> Attendance List </h2>
-            <ul class="center">
-                <li> Brendan Devlin </li>
-                <li> Steve Usagami </li>
-                <li> Krystal Ball </li>
-                <li> Alex Alvarez </li>
+            <boxLong class="boxLong">
+                <h2> Attendance List </h2>
+                <ul class="ems">
+                    <li> Brendan Devlin </li>
+                    <li> Steve Usagami </li>
+                    <li> Krystal Ball </li>
+                    <li> Alex Alvarez </li>
+                </ul>
+            </boxLong>
+        </section>
+
+    
+        <section>
+            <boxLong class="boxLong">
+                <h2> Miscellaneous comments, concerns, and questions </h2>
+                <p> <!-- Using <em> tag for stress emphasis -->
+                    Alex has expressed <em>concern</em> that we are trying to meet in person too much. He thinks we should hybridize our meeting modality. <br>
+                    We have agreed that our collective favorite album of all time is The Beatles' <i>Rubber Soul</i>. <br>
+
+                </p>
+                <p> <b> We voted for our favorite song and show! </b></p>
+                <figure class="audioTab">
+                    <figcaption>Hear a clip from our favorite song: (from UMG (on behalf of Motown); LatinAutorPerf, Sony Music Publishing, CMRRA, LatinAutor - SonyATV, <br>
+                        UNIAO BRASILEIRA DE EDITORAS DE MUSICA - UBEM, SOLAR Music Rights Management, and 9 Music Rights Societies)</figcaption>
+                    <audio 
+                        controls src="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/ForOnceInMyLifeHook.mp3"> 
+                        <a href="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/ForOnceInMyLifeHook.mp3"> </a>
+
+                    </audio>
+                </figure>
+                <p> Watch a clip from our favorite show:  (from Universal Television, NBCUniversal) </p>
+
+                <video controls height="500 px">
+                    <source src="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/BootnRally.mp4" type="video/mp4">
+                    <a href="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/BootnRally.mp4"> </a>
+                </video>
+                
+            </boxLong>
+        </section>
+
+        <hr>
+        <boxShort>
+            <nav>
+                <b>Useful Links:</b> <br>
+                <a href="https://donttestturing.github.io/Lab2_Starter/images/Brendan'sDiagram.png"> Brendan's Diagram </a> <br>
+                <a href="https://donttestturing.github.io/Lab2_Starter/textContent/EmailList.md"> Emails </a>
+            </nav>
+        </boxShort>
+            <hr>
+        <boxShort>
+            <h3> New or Unfinished Business to be discussed next time: </h3>
+            <ul class="ems">
+                <li> Finish deciding on rules and expectations for the team </li>
+                <li> Codebases Decision </li>
+                <li> Meeting time and place change </li>
+                <li> Git Branch and Merge conflicts </li>
             </ul>
-        </section>
-
-        <hr>
-        <section>
-            <h2> Miscellaneous comments, concerns, and questions </h2>
-            <p> <!-- Using <em> tag for stress emphasis -->
-                Alex has expressed <em>concern</em> that we are trying to meet in person too much. He thinks we should hybridize our meeting modality. <br>
-                We have agreed that our collective favorite album of all time is The Beatles' <i>Rubber Soul</i>. <br>
-
-            </p>
-            <p> <b> We voted for our favorite song and show! </b></p>
-            <figure class="center">
-                <figcaption>Hear a clip from our favorite song: (from UMG (on behalf of Motown); LatinAutorPerf, Sony Music Publishing, CMRRA, LatinAutor - SonyATV, UNIAO BRASILEIRA DE EDITORAS DE MUSICA - UBEM, SOLAR Music Rights Management, and 9 Music Rights Societies)</figcaption>
-                <audio 
-                    controls src="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/ForOnceInMyLifeHook.mp3"> 
-                    <a href="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/ForOnceInMyLifeHook.mp3"> </a>
-
-                </audio>
-            </figure>
-            <p> Watch a clip from our favorite show:  (from Universal Television, NBCUniversal) </p>
-
-            <video controls width="270">
-                <source src="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/BootnRally.mp4" type="video/mp4">
-                <a href="https://donttestturing.github.io/Lab2_Starter/AudioVisualContent/BootnRally.mp4"> </a>
-
-            </video>
-
-        </section>
-
-        <hr>
-
-        <nav class="center">
-            <b>Useful Links:</b> <br>
-            <a href="https://donttestturing.github.io/Lab2_Starter/images/Brendan'sDiagram.png"> Brendan's Diagram </a> <br>
-            <a href="https://donttestturing.github.io/Lab2_Starter/textContent/EmailList.md"> Emails </a>
-
-        </nav>
-
-        <hr>
-
-        <h3> New or Unfinished Business to be discussed next time: </h3>
-        <ul class="center">
-            <li> Finish deciding on rules and expectations for the team </li>
-            <li> Codebases Decision </li>
-            <li> Meeting time and place change </li>
-            <li> Git Branch and Merge conflicts </li>
-        </ul>
-        <details class="center">
-            <summary> <i>Click here for rules agreed upon so far:</i> </summary>
-            <ol class="center">
-                <li> Meet twice a week </li>
-                <li> Check slack once a day </li>
-                <li> Be Early </li>
-                <li> Measure twice, cut once </li>
-            </ol>
-        </details>
+            <details>
+                <summary> <i>Click here for rules agreed upon so far:</i> </summary>
+                <ol class="ems">
+                    <li> Meet twice a week </li>
+                    <li> Check slack once a day </li>
+                    <li> Be Early </li>
+                    <li> Measure twice, cut once </li>
+                </ol>
+            </details>
+        </boxShort>
     </main>
 
     <footer>
