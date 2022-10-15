@@ -1,21 +1,45 @@
 /* Aligning all objects to center */
 h1 {
     text-align: center;
-    text-decoration: underline;
     position: static;
 }
 h2 {
-    /*text-align: center;*/
     color: #CA3;
 }
+/* Attribute selector*/
+h2[lang~="en-us"]{
+    color: darkblue;
+}
+/* Unused
 h3 {
-     /*text-align: center;*/
     color: rgb(156, 65, 65);
+} */
+/* Selector list */
+h1, h2, h3 {
+    text-decoration: underline;
 }
-.center{
-    /*text-align: center;*/
-    list-style-position: inside;
+/* id selector */
+#survey{
+    background-color: bisque;
 }
+/* Descendant Combinator */
+boxShortAuto legend {
+    color: rgb(92, 170, 96);
+}
+/* Child Combinator */
+boxShortAuto > h3 {
+    color: rgb(179, 148, 82);
+}
+/* General sibling combinator */
+boxShort ~ boxShort {
+    background-color: rgba(211, 145, 158, 0.3);
+}
+/* Adjacent sibling combinator */
+ul + details {
+    background-color: rgba(248, 182, 0, 0.8);
+}
+/* Combining Two Selectors */
+
 .left{
     text-align: left;
     list-style-position: inside;
@@ -32,17 +56,12 @@ img {
     list-style-position: inside;
     font-size: .825em;
 }
+
 .ol{
     flex-basis: auto;
     align-self: center;
     flex-grow: 10;
 }
-/*
-.item{
-    flex-basis: auto;
-    align-self: center;
-    flex-grow: 10;
-}*/
 .audioTab{
     text-align: center;
     list-style-position: inside;
@@ -57,7 +76,7 @@ body{
     "main main . sidebar"
     "footer footer footer footer";
 }
-boxLong{
+.boxLong{
     grid-area: main;
     text-align: center;
     display: block;
@@ -103,8 +122,8 @@ boxShortAuto{
     position: relative;
 
     display: block;
-
 }
+/* Pseudo-class Selector */
 li:hover{
     color:coral;
 
