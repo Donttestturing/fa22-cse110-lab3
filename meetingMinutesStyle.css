@@ -3,6 +3,40 @@ h1 {
     text-align: center;
     position: static;
 }
+/* class selector */
+.boxLong{
+    grid-area: main;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* Auto margins are available through 'margin: auto' */
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-style: solid;
+    border-color: rgb(90, 44, 197);
+    border-radius: 4mm;
+    border-width: .01in;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* id selector */
+#survey{
+    background-color: rgb(241, 219, 192);
+}
+/* using universal selector for font*/
+* {
+    font-family: "Rosario", sans-serif;
+}
+/* Element selector*/
 h2 {
     color: #CA3;
 }
@@ -10,25 +44,28 @@ h2 {
 h2[lang~="en-us"]{
     color: darkblue;
 }
-/* Unused
-h3 {
-    color: rgb(156, 65, 65);
-} */
+/* Pseudo-class Selector */
+li:hover{
+    color:coral;
+}
+button:active{
+    background-color: blue;
+    color: deeppink;
+}
 /* Selector list */
 h1, h2, h3 {
     text-decoration: underline;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-/* id selector */
-#survey{
-    background-color: bisque;
-}
+
 /* Descendant Combinator */
 boxShortAuto legend {
     color: rgb(92, 170, 96);
 }
 /* Child Combinator */
 boxShortAuto > h3 {
-    color: rgb(179, 148, 82);
+    color: rgb(77, 109, 197);
+    text-decoration:underline chocolate wavy;
 }
 /* General sibling combinator */
 boxShort ~ boxShort {
@@ -39,10 +76,15 @@ ul + details {
     background-color: rgba(248, 182, 0, 0.8);
 }
 /* Combining Two Selectors */
-
-.left{
+ul.ems{
+    font-size: x-large;
     text-align: left;
-    list-style-position: inside;
+}
+/* media query for screen width, background goes gray if window is smaller, perhaps easier to read*/
+@media screen and (max-width: 30cm) {
+    body{
+        background-color: gray;
+    }
 }
 video {
     display: block;
@@ -52,11 +94,10 @@ img {
     display: block;
     margin: auto;
 }
-.ems li{
+.ems1 li{
     list-style-position: inside;
     font-size: .825em;
 }
-
 .ol{
     flex-basis: auto;
     align-self: center;
@@ -76,39 +117,13 @@ body{
     "main main . sidebar"
     "footer footer footer footer";
 }
-.boxLong{
-    grid-area: main;
-    text-align: center;
-    display: block;
-
-    margin-top: 10px;
-    margin-bottom: 8px;
-    margin-left: 10px;
-    margin-right: 10px;
-    /* Auto margins are available through 'margin: auto' */
-
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    border-style: solid;
-    border-color: rgb(90, 35, 218);
-    border-radius: 4mm;
-    border-width: .01in;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
 boxShort{
     max-width: fit-content;
     text-align: center;
     display: inline-block;
     margin: 10px, 10px, 8px, 10px;
     padding: 25px, 25px, 25px, 25px;
-    border: 2px solid rgb(46, 40, 40);
+    border: 2px none hsla(70, 51%, 51%, .4);
     position: sticky;
 }
 boxShortAuto{
@@ -117,19 +132,11 @@ boxShortAuto{
     max-height: fit-content;
     text-align: center;
     margin: auto;
-    padding: 10px, 15px, 10px, 15px;
-    border: 1px solid rgb(186, 212, 69);
+    padding: 10px;
+    border: .1cm none rgb(186, 212, 69);
     position: relative;
 
     display: block;
-}
-/* Pseudo-class Selector */
-li:hover{
-    color:coral;
-
-}
-button:active{
-    color: deeppink;
 }
 form button{
     background: darkgrey;
@@ -140,13 +147,7 @@ a:link{
 a:visited{
     color: rgb(223, 11, 194);
 }
-/* using universal selector for font*/
-* {
-    font-family: "Rosario", sans-serif;
-}
-/* media query for screen width, background goes gray if window is smaller, perhaps easier to read*/
-@media screen and (max-width: 30cm) {
-    body{
-        background-color: gray;
-    }
+.left{
+    text-align: left;
+    list-style-position: inside;
 }
