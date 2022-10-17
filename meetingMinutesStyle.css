@@ -81,9 +81,9 @@ ul.ems{
     text-align: left;
 }
 /* media query for screen width, background goes gray if window is smaller, perhaps easier to read*/
-@media screen and (max-width: 30cm) {
-    body{
-        background-color: gray;
+@media screen and (max-width: 23cm) {
+    header, .boxLong{
+        background-color: rgb(181, 160, 184);
     }
 }
 video {
